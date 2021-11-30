@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <title>Web Site Project - COSC1315</title>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+        
+    
+        body{
+            background:linear-gradient(to right,rgb(85, 65, 85), lightslategray);
+            font-family: 'Patrick Hand', cursive;
+        }
+        .logo{
+            float: left;
+            height: 160px;
+        }
+        
+        .name{
+            background:rgb(214, 197, 122);
+            color:rgb(71, 61, 61);
+            text-align:center;
+            font-size: 60px;
+            font-family:'Patrick Hand', cursive;
+            margin: 0px;
+            width:980px;
+            height: 160px;
+        }
+
+        #search{
+            float: right;
+            color: whitesmoke;
+        }
+
+        #button{
+            color:rgb(66, 48, 66);
+        }
+
+        #banner{
+            background: linear-gradient(to left, rgb(85,65,85), lightslategray);
+            color: whitesmoke;
+            text-align: center;
+            letter-spacing: 3px;
+            font-size: 24px;
+            margin: 0px;
+            height: 40px;
+            width: 980px;
+        }
+
+        .cart{
+          
+        }
+
+        #slogan2{
+            background: linear-gradient(to left, rgb(85,65,85), lightslategray);
+            color: whitesmoke;
+            text-align: center;
+            letter-spacing: 3px;
+            font-size: 24px;
+            margin: 0px;
+            height: 40px;
+        }
+            
+        #copyright{
+            background:rgb(66, 48, 66);
+            color:whitesmoke;
+            text-align: center;
+            letter-spacing: px;
+            font-size: 14px;
+            margin: 0px;
+            height: 25px;
+        }
+</style>
+  </head>
+
+  <table>
+    <tr>
+        <td>
+            <h1 class="logo"><img src="logo.jpg" alt="logo web"></h1>
+        </td>
+        <td>
+            <div class="name">
+                <strong>El Faro<br>Casa de Cultura</strong>
+            </div>    
+        </td>
+        <td></td>
+        <td></td>
+        <td>
+            <div id="search">
+            <label for="website-search"> Search the Website</label>
+            <input type="search" id="website-search" name="q">
+            <br>
+            <button id="button">Search</button>
+            </div>
+        </td>
+    </tr>
+    <tr>
+            <td id="banner" colspan="5">La cultura es para todos!</td>
+    </tr>
+</table>
+<body>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-useName" placeholder="">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+
+            // insert images of: visa, american express, mastercard, discover
+            <div class="cardPics">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameaddr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+
+  <div class="col-25">
+    <div class="cart">
+      <h4>Items in your shopping cart:
+        <span class="price" style="color:black">
+          <i class="fa fa-shopping-cart"></i>
+
+
+          // this section needs math operators & formulas to calculate
+          // this sections needs buttons to calculate and clear
+          //fixed to 2, accounting.js
+
+
+          <b>4</b>
+        </span>
+      </h4>
+      <p><a href="#">Item 1</a> <span class="price">$15</span></p>
+      <p><a href="#">Item 2</a> <span class="price">$5</span></p>
+      <p><a href="#">Item 3</a> <span class="price">$8</span></p>
+      <p><a href="#">Item 4</a> <span class="price">$2</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+    </div>
+  </div>
+</div>
+
+<p></p>
+<section> 
+    <div id="slogan2">
+        <footer><strong>Come to discover your soul!</strong></footer>
+    </div>
+</section>
+
+<br>
+
+<section>
+    <div id="copyright">
+        <i>Copyright© 2021 - El Faro Casa de Cultura - All rights reserved</i>
+    </div>
+</section> 
+<br>
+<a href="csnet.southtrxascollege.edu/localuser/pturrubi/">
+    <strong>Go Back to Homepage</strong><br></a>
+    Patricia Turrubiates</p>
+
+
+</body>
+</html>
+
+
+</html>

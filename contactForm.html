@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <title>Web Site Project - COSC1315</title>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+        
+    
+        body{
+            background:linear-gradient(to right,rgb(85, 65, 85), lightslategray);
+            font-family: 'Patrick Hand', cursive;
+        }
+        .logo{
+            float: left;
+            height: 160px;
+        }
+
+        
+        .name{
+            background:rgb(214, 197, 122);
+            color:rgb(71, 61, 61);
+            text-align:center;
+            font-size: 60px;
+            font-family:'Patrick Hand', cursive;
+            margin: 0px;
+            width:980px;
+            height: 160px;
+
+        }
+        #search{
+            float: right;
+            color: whitesmoke;
+        }
+        #button{
+            color:rgb(66, 48, 66);
+        }
+        #banner{
+            background: linear-gradient(to left, rgb(85,65,85), lightslategray);
+            color: whitesmoke;
+            text-align: center;
+            letter-spacing: 3px;
+            font-size: 24px;
+            margin: 0px;
+            height: 40px;
+            width: 980px;
+        }
+        #slogan2{
+            background: linear-gradient(to left, rgb(85,65,85), lightslategray);
+            color: whitesmoke;
+            text-align: center;
+            letter-spacing: 3px;
+            font-size: 24px;
+            margin: 0px;
+            height: 40px;
+        }        #copyright{
+            background:rgb(66, 48, 66);
+            color:whitesmoke;
+            text-align: center;
+            letter-spacing: px;
+            font-size: 14px;
+            margin: 0px;
+            height: 25px;
+        }
+</style>
+  </head>
+
+  <table>
+    <tr>
+        <td>
+            <h1 class="logo"><img src="logo.jpg" alt="logo web"></h1>
+        </td>
+        <td>
+            <div class="name">
+                <strong>El Faro<br>Casa de Cultura</strong>
+            </div>    
+        </td>
+        <td></td>
+        <td></td>
+        <td>
+            <div id="search">
+            <label for="website-search"> Search the Website</label>
+            <input type="search" id="website-search" name="q">
+            <br>
+            <button id="button">Search</button>
+            </div>
+        </td>
+    </tr>
+    <tr>
+            <td id="banner" colspan="5">La cultura es para todos!</td>
+    </tr>
+</table>
+<body>
+
+
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="mexico">Mexico</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="japan">Japan</option>
+      <option value="england">England</option>
+      <option value="australia">Australia</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Tell us about you..." style="height:200px " width: 400px></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+<p></p>
+<section> 
+    <div id="slogan2">
+        <footer><strong>Come to discover your soul!</strong></footer>
+    </div>
+</section>
+
+<br>
+
+<section>
+    <div id="copyright">
+        <i>Copyright© 2021 - El Faro Casa de Cultura - All rights reserved</i>
+    </div>
+</section> 
+<br>
+<a href="csnet.southtrxascollege.edu/localuser/pturrubi/">
+    <strong>Go Back to Homepage</strong><br></a>
+    Patricia Turrubiates</p>
+
+
+</body>
+</html>
